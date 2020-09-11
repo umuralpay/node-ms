@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/umuralpay/node-ms/issues"
   },
-  "homepage": "https://github.com/umuralpay/node-ms#readme"
+  "homepage": "https://github.com/umuralpay/node-ms#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
