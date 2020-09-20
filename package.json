@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "coverage": "cross-env DEBUG=node-ms:* nyc --reporter=text --reporter=html mocha",
-    "start": "cross-env DEBUG=node-ms:* node index.js",
+    "debug": "cross-env DEBUG=node-ms:* node ./app/index.js",
+    "start": "node ./app/index.js",
     "eslint": "eslint .",
     "test": "cross-env DEBUG=node-ms:* mocha"
   },
