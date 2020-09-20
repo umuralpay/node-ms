@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "coverage": "cross-env DEBUG=node-ms:* nyc --reporter=text --reporter=html mocha",
+    "start": "cross-env DEBUG=node-ms:* node index.js",
     "eslint": "eslint .",
-    "test": "mocha"
+    "test": "cross-env DEBUG=node-ms:* mocha"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,12 @@
     "@types/eslint": "^7.2.2",
     "@types/mocha": "^8.0.3",
     "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
     "eslint": "^7.9.0",
-    "mocha": "^8.1.3"
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
+    "proxyquire": "^2.1.3",
+    "sinon": "^9.0.3",
+    "sinon-chai": "^3.5.0"
   }
 }
